@@ -461,27 +461,27 @@ a {
 }
 
 .loans .image-wrapper .box1 {
-  background: url("/assets/media/loans/personal_loan.jpg") center center no-repeat;
+  background: url("../media/loans/personal_loan.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .loans .image-wrapper .box2 {
-  background: url("/assets/media/loans/business_loan.jpg") center center no-repeat;
+  background: url("../media/loans/business_loan.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .loans .image-wrapper .box3 {
-  background: url("/assets/media/loans/education_loan.jpg") center center no-repeat;
+  background: url("../media/loans/education_loan.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .loans .image-wrapper .box4 {
-  background: url("/assets/media/loans/commercial_loan.jpg") center center no-repeat;
+  background: url("../media/loans/health_loan.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .loans .image-wrapper .box5 {
-  background: url("/assets/media/loans/health_loan.jpg") center center no-repeat;
+  background: url("../media/loans/commercial_loan.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -627,7 +627,7 @@ a {
 .about-hero {
   padding: 6.5rem 0;
   position: relative;
-  background: url("/assets/media/about/about-bg.jpg") center center no-repeat;
+  background: url("../media/about/about-bg.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -749,21 +749,21 @@ a {
 }
 
 .team-sec .team-container .team-member.member1 {
-  background: url("/assets/media/team/member6.jpg") center center no-repeat;
+  background: url("../media/team/member6.jpg") center center no-repeat;
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .team-sec .team-container .team-member.member2 {
-  background: url("/assets/media/team/member7.jpg") center center no-repeat;
+  background: url("../media/team/member7.jpg") center center no-repeat;
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .team-sec .team-container .team-member.member3 {
-  background: url("/assets/media/team/member8.jpg") center center no-repeat;
+  background: url("../media/team/member8.jpg") center center no-repeat;
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
