@@ -5,7 +5,7 @@
     padding: 6.5rem 0;
     position: relative;
     // height: 20vh;
-    background:  url("/assets/media/about/about-bg.jpg") center center no-repeat;
+    background:  url("../media/about/about-bg.jpg") center center no-repeat;
     background-size: cover;
     .overlay {
         position: absolute;
@@ -119,7 +119,7 @@
             }
             
              &.member1 {
-                 background: url("/assets/media/team/member6.jpg") center center no-repeat;
+                 background: url("../media/team/member6.jpg") center center no-repeat;
                  background-size: cover;
                  object-fit: cover;
 
@@ -127,13 +127,13 @@
              }
 
                  &.member2 {
-                 background: url("/assets/media/team/member7.jpg") center center no-repeat;
+                 background: url("../media/team/member7.jpg") center center no-repeat;
                    background-size: cover;
                     object-fit: cover;
              }
 
              &.member3 {
-                 background: url("/assets/media/team/member8.jpg") center center no-repeat;
+                 background: url("../media/team/member8.jpg") center center no-repeat;
                  background-size: cover;
                 object-fit: cover;
              }
