@@ -1,0 +1,50 @@
+
+// Services
+
+.service-details {
+    
+    padding: 3rem 0 8rem;
+    .service {
+        box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+        margin-top: 5rem;
+         transition: transform 1s linear;
+        img {
+            object-fit: cover;
+            
+        }
+        
+          &:hover {
+              transform: scale(1.1);
+          }
+        &:hover .link{
+            border-bottom: 2px solid $primary;
+           
+        }
+        .service-text {
+            padding: 1.3rem;
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: .5rem 0;
+                span {
+                    color: $primary;
+                }
+            }
+            p {
+                margin-bottom: 1.8rem;
+            }
+
+            a {
+                color: $text-color;
+                font-weight: 500;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+// Footer 
+
+.service-footer {
+    margin-top: 0;
+}

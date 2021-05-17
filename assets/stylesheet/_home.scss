@@ -1,0 +1,455 @@
+
+.hide {
+    display: none;
+}
+
+%logo {
+
+    i {
+        margin-right: .8rem;
+        color: $primary;
+    }
+    font-size: 2rem;
+    font-weight: 900;
+    color: $text-color;
+
+    span {
+        color: $primary;
+    }
+}
+// Header
+.header {
+    
+    div {
+        background-color: $secondary;
+        padding: 1rem 0;
+        .nav-top > ul > li {
+            font-size: 1rem;
+            color: $textWhite;
+            margin-right: 1.8rem;
+            i {
+                color: $primary;
+                margin-right: .8rem;
+            }
+         }
+    }
+
+    .nav-bottom {
+        padding: 1.5rem 0;
+        // background-color: red;
+        #toggle, .bars {
+            display: none;
+        }
+        .logo {
+
+            @extend %logo;
+            transition: transform 500ms linear;
+            &:hover {
+                transform: skewX(-15deg);
+            }
+        }
+
+        .navigation {
+            ul > li {
+                margin-right: 3rem;
+                
+                a {
+                    font-size: 1.2rem;
+                    color: $text-color;
+                    font-weight: 500;
+                    position: relative;
+                    &.active::after {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height: 3px;
+                        bottom: -.5rem;
+                        background-color: $primary;
+                    }
+                    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 0;
+                        height: 3px;
+                        
+                        // color: $primary
+                        transition: width .3s linear;
+                        background-color: $primary;
+                    }
+
+                    &:hover::after {
+                        bottom: -.5rem;
+                        width: 100%;
+                    }
+
+                    &.cross {
+                        display: none;
+                    }
+
+                    
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+// Hero
+
+.hero {
+    height: 120vh;
+    
+    //  background: url("/assets/media/hero/bg01.jpg") center center no-repeat;
+    // background-size: cover;
+     background: lightgray;
+    article {
+        // background-color: red;
+        width: 100%;
+        height: 100%;
+        
+        
+
+        .sec1 {
+            color: $secondary;
+            align-self: center;
+            h2 {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 1.3rem;
+                transition: transform 1s linear;
+                &:hover {
+                    transform: skewX(-15deg);
+                }
+            }
+
+            .btn {
+                margin-top: 2.5rem;
+                margin-right: 2rem;
+            }
+        }
+
+        .sec2 {
+            background-color: $textWhite;
+            padding: 2rem;
+            align-self: center;
+            legend {
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+
+            fieldset {
+                margin: 1rem 0;
+            }
+            label {
+                font-size: 1.2rem;
+                display: block;
+                margin-bottom: .5rem;
+            }
+            .form-control {
+                display: block;
+                width: 100%;
+                padding: 1rem 1rem;
+                border: 0;
+                outline: 0;
+                border-radius: .5rem;
+                background-color: lightgray;
+                font-size: 1rem;
+
+                &:focus {
+                    border: 1px solid blue;
+                }
+
+                
+            }
+
+            .form-btn {
+                display: block;
+                width: 100%;
+                padding: 1rem 1rem;
+                border: 0;
+                outline: 0;
+                border-radius: .5rem;
+                background-color: $primary;
+                color: $textWhite;
+                margin-top: 1rem;
+                font-weight: 500;
+                transition: 500ms linear;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            
+            }
+        }
+    }
+
+   
+
+
+// Loans
+
+.loans {
+    h2 {
+        font-size: 2.3rem;
+        font-weight: 600;
+        margin-bottom: 1.1rem;
+    }
+
+    p {
+        margin-bottom: 5rem;
+    }
+
+    .image-wrapper {
+        // display: grid;
+        // grid-template-columns: repeat(5, 1fr);
+        // grid-auto-rows: minmax(500px, 600px);
+        
+        .image-container {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-color: rgba($secondary, .7);
+            }
+
+            .loan-text {
+                // background-color: red;
+                position: absolute;
+                padding: 2rem;
+                bottom: -30%;
+                // background-color: red;
+                color: $textWhite;
+                transition: all 100ms linear;
+                .loan-header {
+                     
+                
+                    h3 {
+                        
+
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 1.5rem;
+                        span {
+                            color: $primary;
+                        }
+                    }
+                }
+
+                .hide-text {
+                    
+                    
+                    p {
+                        margin-bottom: 1rem;
+                        font-size: 1rem;
+                    }
+                    a {
+                       
+                        color: $textWhite;
+                        border-bottom: 3px solid $primary;
+                        font-weight: 500;
+                        font-size: .8rem;
+                    }
+                }
+            }
+                
+
+            &:hover .loan-text{
+                
+                transform: translateY(-55%);
+                
+            } 
+            
+
+             
+        }
+        .box1 {
+            background: url("/assets/media/loans/personal_loan.jpg") center center no-repeat;
+            background-size: cover;
+            
+            
+            
+           
+        }
+
+        .box2 {
+            background: url("/assets/media/loans/business_loan.jpg") center center no-repeat;
+            background-size: cover;
+        }
+
+        .box3 {
+            background: url("/assets/media/loans/education_loan.jpg") center center no-repeat;
+            background-size: cover;
+        }
+
+        .box4 {
+            background: url("/assets/media/loans/commercial_loan.jpg") center center no-repeat;
+            background-size: cover;
+        }
+
+        .box5 {
+            background: url("/assets/media/loans/health_loan.jpg") center center no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+
+// Testimonial
+
+.testimonials-sec {
+
+    h2 {
+        font-size: 2.3rem;
+        font-weight: 600;
+        margin-bottom: 1.3rem;
+    }
+
+    .para {
+        margin-bottom: 4.5rem;
+    }
+
+   .testimonial-container {
+       margin-top: 9rem;
+    //    background-color: blue;
+       .testimonial {
+           position: relative;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+            transition: transform .5s linear;
+            &:hover {
+                transform: scale(1.1);
+            }
+            
+            // padding: 2rem;
+           .testimonial-img {
+               position: absolute;
+               transform: translate(-50%, -50%);
+               left: 50%;
+               img {
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+                object-fit: cover;
+                 
+            }
+
+ 
+           }
+
+           .testimonial-text {
+            padding: 3rem;
+            // background-color: blue;
+                h3 {
+                 font-size: 1.5rem;
+                 margin: 2.5rem 0 .5rem;  
+                 font-weight: 600; 
+                }
+
+                h6 {
+                    font-size: 1.1rem;
+                    color: $primary;
+                    font-weight: 600;
+                    margin-bottom: 2rem;
+                }
+                blockquote {
+                    line-height: 1.7;
+                    font-size: 1.1rem;
+                    font-style: italic;
+                }
+            }
+           
+           
+       }
+       
+   }
+
+   .page-indicator {
+    text-align: center;
+    margin-top: 2.5rem;
+    // background-color: blue;
+    span {
+        display: inline-block;
+        width: .8rem;
+        height: .8rem;
+        border-radius: 50%;
+        background-color: gray;
+        margin-right: .5rem;
+
+    }
+}
+}
+
+// Footer 
+
+
+.footer {
+    margin-top: 1rem;
+    padding: 2rem 0;
+    color: $textWhite;
+    font-size: 1rem;
+    background-color: $secondary;
+
+    .top-footer {
+        padding: 2rem 0;
+        border-bottom: 2px solid rgb(28, 44, 102);
+        .col1 {
+            .logo {
+                @extend %logo;
+                color: $textWhite;
+                margin-bottom: 1.8rem;
+            }
+        }
+
+        .col {
+            h3 {
+                font-size: 1.4rem;
+                margin-bottom: 1.8rem;
+                font-weight: 600;
+            }
+
+            p {
+                margin-bottom: .8rem;
+            }
+
+            nav > ul > li {
+                margin-bottom: 1rem;
+                a {
+                    color: $textWhite;
+
+                    i {
+                        margin-right: .6rem;
+                    }
+                    &:hover {
+                        color: $primary;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-footer {
+        padding: 1.2rem 0 .5rem;
+        nav > ul > li {
+            a {
+                color: $textWhite;
+            }
+        }
+
+        div {
+            justify-content: flex-end;
+        }
+    }
+}

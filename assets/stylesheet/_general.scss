@@ -1,0 +1,131 @@
+// Custom Styles
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #272727;
+    line-height: 1.5;
+    // padding-bottom: 50rem;
+}
+
+// Container 
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+// Flex
+
+.flex {
+    display: flex;
+    
+}
+
+
+.jcb {
+    justify-content: space-between;
+}
+
+.jce {
+    justify-content: space-evenly;
+}
+
+.aic {
+    align-items: center;
+}
+
+.jcc {
+    justify-content: center;
+}
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-45 {
+    flex: 0 1 47%;
+}
+
+.flex-30 {
+    flex: 0 1 31.5%;
+}
+
+.flex-20 {
+    flex: 0 1 20%;
+}
+.flex-25 {
+    flex: 0 1 25%;
+}
+
+
+.flex-65 {
+    flex: 0 1 65%;
+}
+
+.flex-33 {
+    flex: 0 1 31.5%;
+}
+
+// General Styles
+
+a {
+    text-decoration: none;
+}
+
+.imgFull {
+    width: 100%;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding {
+    padding: 5rem 0;
+}
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    transition: transform 1s linear;
+
+    &-primary {
+        background-color: $primary;
+        color: $textWhite;
+        font-weight: 500;
+    }
+
+    &-secondary {
+        background-color: $secondary;
+        color: $textWhite;
+        font-weight: 500;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+

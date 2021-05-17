@@ -1,0 +1,70 @@
+
+// Contact
+
+.form-container {
+    max-width: 650px;
+    
+    .form {
+        box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+        padding: 2rem;
+        max-width: 100%;
+        border-radius: .5rem;
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 1.2rem .75rem;
+            font-size: .8rem;
+            border-radius: .5rem;
+            margin: .5rem 0;
+            border: 0;
+            outline: 0;
+            background-color: rgb(228, 222, 222);
+            &:focus {
+                border: 2px solid blue;
+            }
+            
+        }
+
+        .btn {
+            border: 0;
+            outline: 0;
+            margin-top: 1.5rem;
+        }
+
+        
+        
+
+        label {
+            font-size: 1.3rem;
+            font-weight: 500;
+            display: block;
+            margin: .5rem 0;
+        }
+    }
+}
+
+// Office Info
+
+.office {
+    margin-top: 2.5rem;
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    ul > li {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        i {
+            margin-right: 1rem;
+            color: $primary;
+        }
+    }
+}
+
+// footer
+
+.contact-footer {
+    margin-top: 4.5rem;
+}

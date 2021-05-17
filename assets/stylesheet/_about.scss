@@ -1,0 +1,149 @@
+
+// Hero
+
+.about-hero {
+    padding: 6.5rem 0;
+    position: relative;
+    // height: 20vh;
+    background:  url("/assets/media/about/about-bg.jpg") center center no-repeat;
+    background-size: cover;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba($secondary, .9);
+    }
+
+    .about-heading {
+        position: absolute;
+        color: $textWhite;
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        a {
+            font-size: 1rem;
+            color: $textWhite;
+            span {
+                color: $textWhite;
+            }
+        }
+
+        span {
+            margin-left: .5rem;
+            font-size: 1rem;
+            color: gray;
+        }
+    }
+}
+
+// Team
+
+.team-sec {
+    h2 {
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .team-container {
+        // background-color: gray;
+        margin-top: 3rem;
+        
+        // background-color: red;
+        .team-member {
+            min-height: 32rem;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba($secondary, .5);
+                display: none;
+            }
+            .member-details {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                color: $textWhite;
+                padding: 2rem;
+                top: 75%;
+                transition: all .4s linear;
+
+               
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    margin-bottom: .5rem;
+                }
+                h6 {
+                    font-size: 1.1rem;
+                    color: $primary;
+                    padding-bottom: 1.7rem;
+                    border-bottom: 1px solid rgb(71, 78, 104);
+                    font-weight: 600;
+                }
+                p {
+                    margin: 2rem 0 10rem;
+                    font-size: 1rem;
+                    line-height: 1.7;
+                }
+
+                nav > ul > li {
+                    margin-right: 1rem;
+                    a {
+                        font-size: 1.3rem;
+                        color: $textWhite;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+
+               
+            }
+            &:hover .overlay{
+                display: block;
+            }
+            
+            &:hover .member-details {
+                transform: translateY(-77%);
+            }
+            
+             &.member1 {
+                 background: url("/assets/media/team/member6.jpg") center center no-repeat;
+                 background-size: cover;
+                 object-fit: cover;
+
+                
+             }
+
+                 &.member2 {
+                 background: url("/assets/media/team/member7.jpg") center center no-repeat;
+                   background-size: cover;
+                    object-fit: cover;
+             }
+
+             &.member3 {
+                 background: url("/assets/media/team/member8.jpg") center center no-repeat;
+                 background-size: cover;
+                object-fit: cover;
+             }
+           
+        }
+    }
+}
+
+// Footer
+
+.about-footer {
+    margin-top: 5rem;
+}

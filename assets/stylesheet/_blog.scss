@@ -1,0 +1,89 @@
+// Blolg
+
+.blog-sec {
+
+    padding: 4rem 0;
+
+    .blog {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        margin-top: 5rem;
+        
+        .blog-img {
+            img {
+                object-fit: cover;
+            }
+        }
+            .blog-text {
+                padding: 1.8rem;
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    // background-color: blue;
+                    
+                }
+
+                span {
+                    margin-right: 1rem;
+                    font-size: .8rem;
+                     opacity: .7;
+                     
+                    & .active{
+                        margin-right: .5rem;
+                        opacity: 1;
+                        color: green;
+                         font-size: 1.3;
+                    }
+                }
+
+                p {
+                    margin: 1.5rem 0 2rem;
+                    font-size: 1rem;
+                    
+                }
+
+                a {
+                    font-size: .8rem;
+                    color:$text-color;
+                    font-weight: 500;
+                    opacity: .7;
+                    display: inline-block;
+                    
+
+                }
+                
+            }
+        
+    }
+
+    .page-indicator {
+        margin-top: 3rem;
+        text-align: center;
+        
+        // background-color: blue;
+        span {
+            display: inline-block;
+            cursor: pointer;
+            transition:all .5s linear;
+            // background-color: blue;
+            padding: .5rem 1rem;
+            margin: .5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border: 1px solid lightgray;
+            &.prev i{
+                margin-right: .5rem;
+
+            }
+            &.next i{
+                margin-left: .5rem;
+            }
+
+            &:hover {
+                color: $textWhite;
+                background-color: $primary;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
