@@ -1,5 +1,5 @@
 let heroBg = document.querySelector(".hero");
-
+let imageContainer = document.querySelectorAll(".image-container");
 let bgArray = [
     {
         img: "assets/media/hero/bg-02.jpg"
@@ -36,10 +36,27 @@ let bgArray = [
 
 ];
 
-heroBg.style.backgroundImage = `url(assets/media/hero/bg-02.jpg)`;
-heroBg.style.backgroundSize = `cover`;
-heroBg.style.backgroundRepeat = `no-repeat`;
-heroBg.style.backgroundPosition = `center center`;
+let loanImages = [
+    {
+        img: "assets/media/loans/personal_loan.jpg"
+    }
+    ,
+    {
+        img: "assets/media/loans/business_loan.jpg"
+    },
+    {
+        img: "assets/media/loans/education_loan.jpg"
+    },
+    {
+        img: "assets/media/loans/health_loan.jpg"
+    },
+    {
+        img: "assets/media/loans/commercial_loan.jpg"
+    }
+
+]
+
+
 function handleLoad() {
     heroBg.style.backgroundImage = `url(${bgArray[randomNumber()].img})`;
     heroBg.style.backgroundSize = `cover`;
@@ -48,5 +65,13 @@ function handleLoad() {
 
 
 }
+
+imageContainer = Array.from(imageContainer);
+imageContainer.forEach((elm, i) => {
+    elm.style.backgroundImage = loanImages[i].img; 
+    elm.style.backgroundSize = `cover`;
+    elm.style.backgroundRepeat = `no-repeat`;
+    elm.style.backgroundPosition = `center center`;
+})
 
 setInterval(handleLoad, 1000);
