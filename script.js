@@ -7,16 +7,6 @@ let toggle = document.querySelector("#toggle");
 
 
 
-function randomNumber() {
-   
-    let num = Math.floor(Math.random() * 8);
-    return num;
-}
-
-
-
-
-
 bars.addEventListener("click", () => {
     if(toggle.checked === false) {
     bars.innerHTML = `<i class="fas fa-times"></i>`;

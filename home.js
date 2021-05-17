@@ -36,6 +36,13 @@ let bgArray = [
 
 ];
 
+function randomNumber() {
+   
+    let num = Math.floor(Math.random() * 8);
+    return num;
+}
+
+
 let loanImages = [
     {
         img: "assets/media/loans/personal_loan.jpg"
