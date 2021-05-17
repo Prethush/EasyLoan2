@@ -49,4 +49,4 @@ function handleLoad() {
 
 }
 
-setInterval(handleLoad, 2000);
+setInterval(handleLoad, 1000);
