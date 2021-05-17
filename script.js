@@ -2,7 +2,7 @@ let bars = document.querySelector(".bars");
 let cross = document.querySelector(".cross");
 let navigation = document.querySelector(".navigation");
 let toggle = document.querySelector("#toggle");
-
+let heroBg = document.querySelector(".hero");
 
 
 
@@ -43,6 +43,9 @@ function display() {
 }
 
 
-
+heroBg.style.backgroundImage = `url(assets/media/hero/bg-02.jpg)`;
+    heroBg.style.backgroundSize = `cover`;
+    heroBg.style.backgroundRepeat = `no-repeat`;
+    heroBg.style.backgroundPosition = `center center`;
 
 display();
