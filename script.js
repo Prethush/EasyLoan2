@@ -2,10 +2,14 @@ let bars = document.querySelector(".bars");
 let cross = document.querySelector(".cross");
 let navigation = document.querySelector(".navigation");
 let toggle = document.querySelector("#toggle");
+let heroBg = document.querySelector(".hero");
 
 
 
-
+heroBg.style.backgroundImage = `url(assets/media/hero/loan-04.jpg)`;
+     heroBg.style.backgroundSize = `cover`;
+     heroBg.style.backgroundRepeat = `no-repeat`;
+     heroBg.style.backgroundPosition = `center center`;
 
 bars.addEventListener("click", () => {
     if(toggle.checked === false) {
