@@ -75,6 +75,7 @@ function handleLoad() {
 
 imageContainer = Array.from(imageContainer);
 imageContainer.forEach((elm, i) => {
+    
     elm.style.backgroundImage = loanImages[i].img; 
     elm.style.backgroundSize = `cover`;
     elm.style.backgroundRepeat = `no-repeat`;
@@ -82,3 +83,4 @@ imageContainer.forEach((elm, i) => {
 })
 
 setInterval(handleLoad, 1000);
+
