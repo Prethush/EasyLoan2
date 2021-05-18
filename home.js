@@ -1,4 +1,4 @@
-let heroBg = document.querySelector(".hero");
+
 // let imageContainer = document.querySelectorAll(".image-container");
 // let bgArray = [
 //     {
